@@ -1,20 +1,52 @@
+# Git
 .git
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-docs/
-notebooks/
-*.log
-*.db
-*.sqlite3
+.gitignore
 
-# IDE and editor specific files
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Documentation
+*.md
+docs/
+
+# Development
+.env.local
+.env.development
+docker-compose.yml
+docker-compose.override.yml
+
+# Node modules (if any)
+node_modules/
+npm-debug.log*
